@@ -27,8 +27,6 @@ public static string MostFrequentTriplet(string str, CancellationToken ct)
             {
                 Parallel.For(0, totalWords, new ParallelOptions { CancellationToken = ct }, i =>
                 {
-                    Console.WriteLine($"Started Thread {Thread.CurrentThread.ManagedThreadId}");
-                    Thread.Sleep(5000);
                     string currWord = trimmedWords[i];
                     int wordLength = currWord.Length;
                     //проход по каждому слову
