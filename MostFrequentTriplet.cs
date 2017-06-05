@@ -32,7 +32,6 @@ public static string MostFrequentTriplet(string str, CancellationToken ct)
                     
                     for (int j = 0; j <= wordLength - 3; j++)
                     {
-
                         string currTriplet = currWord.Substring(j, 3);
                         if (!tripletDictionary.ContainsKey(currTriplet))
                         {
