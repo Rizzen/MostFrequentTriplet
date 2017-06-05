@@ -29,7 +29,7 @@ public static string MostFrequentTriplet(string str, CancellationToken ct)
                 {
                     string currWord = trimmedWords[i];
                     int wordLength = currWord.Length;
-                    //проход по каждому слову
+                    
                     for (int j = 0; j <= wordLength - 3; j++)
                     {
 
